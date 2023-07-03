@@ -5,7 +5,7 @@
 <%= image_tag category.icon, alt: "#{category.name} icon"%>
 <h2><%= category.name %></h2>
 <div><%=category.created_at.strftime('%Y-%b-%d')%></div>
-<div>Total</div> 
+<div><%=category.products.sum {|product| product[:amount]}%></div> 
 </div>
 <% end %>
 <%end%>

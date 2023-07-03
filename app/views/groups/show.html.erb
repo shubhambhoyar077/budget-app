@@ -1,2 +1,11 @@
-<h1>Groups#show</h1>
-<p>Find me in app/views/groups/show.html.erb</p>
+<ul>
+<% @products.each do |product|%>
+<div>
+<h2><%= product.name %></h2>
+<div><%= product.amount %></div>
+<div><%=product.created_at.strftime('%Y-%b-%d')%></div>
+<div>Total</div> 
+</div>
+<% end %>
+</ul>
+<%= button_to "Add transition", new_group_product_path(@group), method: :get %>

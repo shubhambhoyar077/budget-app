@@ -1,2 +1,18 @@
-<h1>Products#new</h1>
-<p>Find me in app/views/products/new.html.erb</p>
+<%= form_with model: ([@group, @product]) do |form|%>
+<h1 class="text-center mb-3">Create transition</h1>
+
+<div class="mb-3">
+<%=form.label :name, class: "form-label"%>
+<%=form.text_field :name, class: "form-control"%>
+</div>
+
+<div class="mb-3">
+<%=form.label :amount, class: "form-label"%>
+<%=form.number_field :amount, class: "form-control"%>
+</div>
+
+<%= form.hidden_field :group_ids, value:[@group] %>
+
+
+<%=form.submit "Create", class: "btn btn-primary"%>
+<%end%>
