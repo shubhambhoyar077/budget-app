@@ -1,9 +1,10 @@
+<%= render "shared/category", category: @group%>
 <ul>
 <% @products.each do |product|%>
 <div>
 <h2><%= product.name %></h2>
 <div><%= product.amount %></div>
-<div><%=product.created_at.strftime('%Y-%b-%d')%></div>
+<div><%=product.created_at.strftime("%d %b %Y at %l:%M %P")%></div>
 <div>Total</div> 
 </div>
 <% end %>
