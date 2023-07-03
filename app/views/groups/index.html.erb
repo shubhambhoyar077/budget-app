@@ -1,4 +1,5 @@
 <% content_for :page_name, "Categories" %>
+<% content_for :back_path, root_path%>
 <ul>
 <% @groups.each do |category|%>
 <%= link_to category do %>
