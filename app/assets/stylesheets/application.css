@@ -17,3 +17,8 @@
 body {
   background-color: rgb(241, 241, 241);
 }
+
+.form-field {
+  height: 3rem;
+  border-radius: 0%;
+}
