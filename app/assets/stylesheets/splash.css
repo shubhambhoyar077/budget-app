@@ -23,3 +23,8 @@
   left: 0;
   right: 0;
 }
+
+.btn-col:hover {
+  background-color: #3778c2;
+  color: white;
+}
