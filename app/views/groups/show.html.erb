@@ -1,5 +1,8 @@
 <% content_for :back_path, root_path%>
 <% content_for :page_name, "TRANSITION" %>
+<% content_for :nav_button do%>
+<%= button_to "Logout", destroy_user_session_path, method: :delete,class: "nav-link text-white" %>
+<%end%>
 
 <%= render "shared/category", category: @group%>
 <ul class="list-group">

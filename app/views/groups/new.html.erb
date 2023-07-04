@@ -1,5 +1,8 @@
 <% content_for :back_path, root_path%>
 <% content_for :page_name, "CREATE CATEGORIES" %>
+<% content_for :nav_button do%>
+<%= button_to "Logout", destroy_user_session_path, method: :delete,class: "nav-link text-white" %>
+<%end%>
 <%= form_with model: @group do |form|%>
 
 <div class="mb-3">
