@@ -1,12 +1,12 @@
 <% content_for :back_path, root_path%>
-<% content_for :page_name, "TRANSITION" %>
+<% content_for :page_name, "TRANSACTIONS" %>
 <% content_for :nav_button do%>
 <%= button_to "Logout", destroy_user_session_path, method: :delete,class: "nav-link text-white" %>
 <%end%>
 
 <%= render "shared/category", category: @group%>
 <ul class="list-group">
-<li class="list-group-item"><h2>Transitions</h2></li>
+<li class="list-group-item"><h2>Transactions</h2></li>
 <% @products.each do |product|%>
 <li class="list-group-item">
 <div class="d-flex justify-content-between">
@@ -17,4 +17,4 @@
 </li>
 <% end %>
 </ul>
-<%= button_to "Add transition", new_group_product_path(@group), method: :get, class: "btn btn-style btn-lg mt-2" %>
+<%= button_to "Add Transaction", new_group_product_path(@group), method: :get, class: "btn btn-style btn-lg mt-2" %>
