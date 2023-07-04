@@ -1,5 +1,6 @@
+<% content_for :back_path, group_path(@group) %>
+<% content_for :page_name, "CREATE TRANSITION" %>
 <%= form_with model: ([@group, @product]) do |form|%>
-<h1 class="text-center mb-3">Create transition</h1>
 
 <div class="mb-3">
 <%=form.label :name, class: "form-label"%>
@@ -14,5 +15,5 @@
 <%= form.hidden_field :group_ids, value:[@group] %>
 
 
-<%=form.submit "Create", class: "btn btn-primary"%>
+<%=form.submit "Create", class: "btn btn-style btn-lg"%>
 <%end%>
