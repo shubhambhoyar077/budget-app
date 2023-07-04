@@ -1,16 +1,17 @@
+<% content_for :back_path, root_path%>
+<% content_for :page_name, "CREATE CATEGORIES" %>
 <%= form_with model: @group do |form|%>
-<h1 class="text-center mb-3">Create Category</h1>
 
 <div class="mb-3">
 <%=form.label :icon, class: "form-label"%>
-<%=form.text_field :icon, class: "form-control"%>
+<%=form.text_field :icon, class: "form-control", placeholder: "Icon link"%>
 </div>
 
 <div class="mb-3">
 <%=form.label :name, class: "form-label"%>
-<%=form.text_field :name, class: "form-control"%>
+<%=form.text_field :name, class: "form-control", placeholder: "Category name"%>
 </div>
 
 
-<%=form.submit "Create", class: "btn btn-primary"%>
+<%=form.submit "Create", class: "btn btn-style btn-lg"%>
 <%end%>
