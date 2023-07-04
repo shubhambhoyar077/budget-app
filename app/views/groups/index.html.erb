@@ -6,7 +6,7 @@
 <ul class="list-group">
 <% @groups.each do |category|%>
 <%= link_to category do %>
-<li>
+<li class="mb-3">
 <%= render "shared/category", category: category%>
 </li>
 <% end %>
