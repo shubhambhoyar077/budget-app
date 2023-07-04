@@ -1,12 +1,17 @@
+<% content_for :back_path, root_path%>
+<% content_for :page_name, "TRANSITION" %>
+
 <%= render "shared/category", category: @group%>
-<ul>
+<ul class="list-group">
+<li class="list-group-item"><h2>Transitions</h2></li>
 <% @products.each do |product|%>
-<div>
+<li class="list-group-item">
+<div class="d-flex justify-content-between">
 <h2><%= product.name %></h2>
 <div><%= product.amount %></div>
-<div><%=product.created_at.strftime("%d %b %Y at %l:%M %P")%></div>
-<div>Total</div> 
 </div>
+<div><%=product.created_at.strftime("%d %b %Y at %l:%M %P")%></div>
+</li>
 <% end %>
 </ul>
-<%= button_to "Add transition", new_group_product_path(@group), method: :get %>
+<%= button_to "Add transition", new_group_product_path(@group), method: :get, class: "btn btn-style btn-lg mt-2" %>
