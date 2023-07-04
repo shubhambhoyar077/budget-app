@@ -15,7 +15,10 @@
 <%=form.number_field :amount, class: "form-control"%>
 </div>
 
-<%= form.hidden_field :group_ids, value:[@group] %>
+<div class="mb-3">
+  <%= form.label "Category", class: "form-label" %>
+  <%= form.collection_select :group_ids, current_user.groups, :id, :name, {}, {multiple: true,class: "form-select"}  %>
+</div>
 
 <div class="btn-form-container">
 <%=form.submit "Create", class: "btn btn-style btn-lg"%>
