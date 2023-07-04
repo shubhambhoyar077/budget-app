@@ -33,3 +33,7 @@ body {
   background-color: #076bde;
   color: white;
 }
+
+.nav_bar_m {
+  margin: 0 1rem;
+}
