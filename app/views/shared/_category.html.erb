@@ -1,6 +1,18 @@
-<div>
-<%= image_tag category.icon, alt: "#{category.name} icon"%>
-<h2><%= category.name %></h2>
-<div><%=category.created_at.strftime('%d %b %Y')%></div>
-<div><%=category.products.sum {|product| product[:amount]}%></div> 
+<div class="card mb-3" style="max-height: 300px; max-width: 700px; border: none; padding: 1rem;">
+  <div class="row g-0 h-100">
+    <div class="col-4 col-md-4">
+    <%= image_tag category.icon, alt: "#{category.name} icon", class: "img-fluid rounded-start h-70"%>
+    </div>
+    <div class="col-8 col-md-8 d-flex flex-column justify-content-between", style="padding-left: 0.5rem;">
+      <div>
+        <div class="d-flex justify-content-between">
+          <h5 class="card-title"><%= category.name %></h5>
+          <p class="card-text"><%=category.products.sum {|product| product[:amount]}%></p>
+        </div>
+      </div>
+      <div class="mt-auto">
+        <p class="card-text"><%=category.created_at.strftime('%d %b %Y')%></p>
+      </div>
+    </div>
+  </div>
 </div>

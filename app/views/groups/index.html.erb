@@ -1,6 +1,9 @@
-<% content_for :page_name, "Categories" %>
 <% content_for :back_path, root_path%>
-<ul>
+<% content_for :page_name, "Categories" %>
+<% content_for :nav_button do%>
+<%= button_to "Logout", destroy_user_session_path, method: :delete,class: "nav-link text-white" %>
+<%end%>
+<ul class="list-group">
 <% @groups.each do |category|%>
 <%= link_to category do %>
 <li>
@@ -10,3 +13,11 @@
 <%end%>
 </ul>
 <%= button_to "Add Category", new_group_path, method: :get %>
+
+
+
+
+
+
+
+
