@@ -8,13 +8,13 @@
 
   <% if content_for?(:page_name) %>
   <div class="d-flex justify-content-center flex-grow-1">
-    <span class="navbar-text text-white"><%=yield(:page_name)%></span>
+    <span class="navbar-text text-white proxima-semi-bold"><%=yield(:page_name)%></span>
   </div>
   <%end%>
   
   <% if content_for?(:nav_button) %>
   <ul class="navbar-nav ml-auto">
-    <li class="nav-item">
+    <li class="nav-item proxima-semi-bold">
       <%= yield(:nav_button)%> 
     </li>
   </ul>

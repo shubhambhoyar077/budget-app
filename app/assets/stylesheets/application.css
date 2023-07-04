@@ -16,6 +16,8 @@
 
 body {
   background-color: rgb(241, 241, 241);
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 300;
 }
 
 .form-field {
@@ -36,4 +38,14 @@ body {
 
 .nav_bar_m {
   margin: 0 1rem;
+}
+
+.proxima-bold {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 700;
+}
+
+.proxima-semi-bold {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
 }
