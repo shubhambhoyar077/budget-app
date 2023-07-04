@@ -22,3 +22,18 @@ body {
   height: 3rem;
   border-radius: 0%;
 }
+
+.btn-style {
+  background-color: #3778c2;
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+.btn-style:hover {
+  background-color: #076bde;
+  color: white;
+}
