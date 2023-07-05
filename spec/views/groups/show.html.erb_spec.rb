@@ -6,7 +6,6 @@ RSpec.describe 'Group/show', type: :system do
       @user = User.create(name: 'Test', email: 'test2@example.com', password: 'password')
       @group = Group.create(author: @user, name: "test group1", icon: "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg")
       @product = Product.new(author: @user, name: "test product", amount: 20, groups: [@group])
-      # @product << @group
       @product.save
       visit group_path(@group)
       fill_in 'Email', with: @user.email
