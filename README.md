@@ -13,6 +13,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [📺 Presentation](#presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -69,6 +70,12 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo](https://savearly.onrender.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📺 Presentation <a name="presentation"></a>
+
+- [Link to video presentation](https://drive.google.com/file/d/1k55O0O4ikycAZa_UpCM6hodx751LYX4j/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
