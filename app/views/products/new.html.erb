@@ -7,17 +7,17 @@
 
 <div class="mb-3">
 <%=form.label :name, class: "form-label"%>
-<%=form.text_field :name, class: "form-control"%>
+<%=form.text_field :name, class: "form-control", required: true%>
 </div>
 
 <div class="mb-3">
 <%=form.label :amount, class: "form-label"%>
-<%=form.number_field :amount, class: "form-control"%>
+<%=form.number_field :amount, class: "form-control", required: true, min: 1%>
 </div>
 
 <div class="mb-3">
   <%= form.label "Category", class: "form-label" %>
-  <%= form.collection_select :group_ids, current_user.groups, :id, :name, {}, {multiple: true,class: "form-select"}%>
+  <%= form.collection_select :group_ids, current_user.groups, :id, :name, {}, {multiple: true,class: "form-select", required: true}%>
 </div>
 
 <div class="btn-form-container">

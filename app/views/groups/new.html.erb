@@ -7,12 +7,12 @@
 
 <div class="mb-3">
 <%=form.label :icon, class: "form-label"%>
-<%=form.text_field :icon, class: "form-control", placeholder: "Icon link"%>
+<%=form.text_field :icon, class: "form-control", placeholder: "Icon link", required: true, pattern: "^(http|https)://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(\/.*)?$"%>
 </div>
 
 <div class="mb-3">
 <%=form.label :name, class: "form-label"%>
-<%=form.text_field :name, class: "form-control", placeholder: "Category name"%>
+<%=form.text_field :name, class: "form-control", placeholder: "Category name", required: true%>
 </div>
 
 <div class="btn-container">
