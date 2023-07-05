@@ -22,9 +22,9 @@ RSpec.describe "Groups", type: :request do
 
   describe 'POST :create' do
     it 'creates a new group' do
-      recipe_attributes = { name: 'test group', icon: "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg"}
+      group_attributes = { name: 'test group', icon: "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg"}
 
-      post '/groups', params: { group: recipe_attributes }
+      post '/groups', params: { group: group_attributes }
 
       expect(response.status).to eq(302)
       expect(Group.last.name).to eq('test group')
