@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Product, type: :model do
   @user = User.create(name: 'Tom', email: 'test2@gmail.com', password: 'test123')
-  subject { Product.new(author: @user, name: "test product", amount: 20) }
+  subject { Product.new(author: @user, name: 'test product', amount: 20) }
 
   before { subject.save }
   it 'Name should be present' do

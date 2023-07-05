@@ -1,13 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe "Products", type: :request do
+RSpec.describe 'Products', type: :request do
   before :each do
     @user = User.create(name: 'Test', email: 'test2@example.com', password: 'password')
-    @group = Group.create(author: @user, name: "test group", icon: "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg")
+    @group = Group.create(author: @user, name: 'test group', icon: 'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg')
     sign_in @user
   end
-  describe "GET /new" do
-    it "returns http success" do
+  describe 'GET /new' do
+    it 'returns http success' do
       get new_group_product_path(@group)
       expect(response).to have_http_status(:success)
     end
@@ -15,7 +15,7 @@ RSpec.describe "Products", type: :request do
 
   describe 'POST :create' do
     it 'creates a new product' do
-      product_attributes = { name: 'test group', amount: 20}
+      product_attributes = { name: 'test group', amount: 20 }
 
       post group_products_path(@group), params: { product: product_attributes }
 
@@ -24,5 +24,4 @@ RSpec.describe "Products", type: :request do
       expect(Product.last.amount).to eq(20.0)
     end
   end
-
 end
