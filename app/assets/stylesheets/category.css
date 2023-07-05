@@ -2,9 +2,11 @@
   max-width: 70%;
   height: auto;
 }
+
 li {
   list-style: none;
 }
+
 .icon {
   max-height: 158px;
 }

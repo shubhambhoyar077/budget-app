@@ -5,12 +5,14 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .splash-title-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-grow: 1;
 }
+
 .splash-title {
   font-size: 36px;
   font-weight: bold;
