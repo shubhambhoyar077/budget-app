@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Group', type: :system do
+RSpec.describe 'Group/Index.', type: :system do
   describe 'group index page' do
     before do
       @user = User.create(name: 'Test', email: 'test2@example.com', password: 'password')
