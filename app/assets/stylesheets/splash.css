@@ -1,0 +1,37 @@
+.splash-container {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.splash-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.splash-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.splash-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.btn-color {
+  background-color: #3778c2;
+  color: white;
+}
+
+.btn-col:hover {
+  background-color: #3778c2;
+  color: white;
+}

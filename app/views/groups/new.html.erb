@@ -1,0 +1,21 @@
+<% content_for :back_path, root_path%>
+<% content_for :page_name, "CREATE CATEGORIES" %>
+<% content_for :nav_button do%>
+<%= button_to "Logout", destroy_user_session_path, method: :delete,class: "nav-link text-white" %>
+<%end%>
+<%= form_with model: @group do |form|%>
+
+<div class="mb-3">
+<%=form.label :icon, class: "form-label"%>
+<%=form.text_field :icon, class: "form-control", placeholder: "Icon link", required: true, pattern: "^(http|https)://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(\/.*)?$"%>
+</div>
+
+<div class="mb-3">
+<%=form.label :name, class: "form-label"%>
+<%=form.text_field :name, class: "form-control", placeholder: "Category name", required: true%>
+</div>
+
+<div class="btn-container">
+<%=form.submit "Create", class: "btn btn-style btn-lg"%>
+</div>
+<%end%>

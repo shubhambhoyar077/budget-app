@@ -1,0 +1,13 @@
+<% content_for :nav_bar, "navbar not required"%>
+<div class="splash-container">
+  <div class="splash-title-container">
+    <h1 class="splash-title proxima-bold">SavEarly</h1>
+  </div>
+  <div class="splash-btn">
+    <div class="d-grid gap-2 mt-5" style="width: 100%;">
+      <%= link_to "LOG IN", new_user_session_path, class: "btn btn-col btn-lg btn-color" %>
+      <%= link_to "SIGN UP", new_user_registration_path, class: "btn btn-col btn-lg" %>
+    </div>
+  </div>
+</div>
+

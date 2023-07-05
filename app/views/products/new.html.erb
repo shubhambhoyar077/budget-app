@@ -1,0 +1,26 @@
+<% content_for :back_path, group_path(@group) %>
+<% content_for :page_name, "CREATE TRANSACTION" %>
+<% content_for :nav_button do%>
+<%= button_to "Logout", destroy_user_session_path, method: :delete,class: "nav-link text-white" %>
+<%end%>
+<%= form_with model: ([@group, @product]) do |form|%>
+
+<div class="mb-3">
+<%=form.label :name, class: "form-label"%>
+<%=form.text_field :name, class: "form-control", required: true%>
+</div>
+
+<div class="mb-3">
+<%=form.label :amount, class: "form-label"%>
+<%=form.number_field :amount, class: "form-control", required: true, min: 1%>
+</div>
+
+<div class="mb-3">
+  <%= form.label "Category", class: "form-label" %>
+  <%= form.collection_select :group_ids, current_user.groups, :id, :name, {}, {multiple: true,class: "form-select", required: true}%>
+</div>
+
+<div class="btn-form-container">
+<%=form.submit "Create", class: "btn btn-style btn-lg"%>
+</div>
+<%end%>

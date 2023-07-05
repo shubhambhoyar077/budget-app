@@ -1,0 +1,22 @@
+<% content_for :back_path, root_path%>
+<% content_for :page_name, "TRANSACTIONS" %>
+<% content_for :nav_button do%>
+<%= button_to "Logout", destroy_user_session_path, method: :delete,class: "nav-link text-white" %>
+<%end%>
+
+<%= render "shared/category", category: @group%>
+<ul class="list-group">
+<li class="list-group-item"><h2>Transactions</h2></li>
+<% @products.each do |product|%>
+<li class="list-group-item">
+<div class="d-flex justify-content-between">
+<h2><%= product.name %></h2>
+<div class="proxima-bold">$<%= product.amount %></div>
+</div>
+<div><%=product.created_at.strftime("%d %b %Y at %l:%M %P")%></div>
+</li>
+<% end %>
+</ul>
+<div class="btn-container">
+<%= button_to "Add Transaction", new_group_product_path(@group), method: :get, class: "btn btn-style btn-lg mt-2" %>
+</div>
