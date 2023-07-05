@@ -5,10 +5,10 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @group = current_user.groups.find(product_params[:group_ids][1])
+    @group = current_user.groups.find(params[:group_id])
     @product = current_user.products.new(product_params)
     if @product.save
-      redirect_to group_path(@group)
+      redirect_to group_path(@group), notice: "Transaction is added"
     else
       render :new
     end
