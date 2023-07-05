@@ -33,7 +33,7 @@
 
 # 📖 SavEarly <a name="about-project"></a>
 
-**SavEarly** is web app that allows users to group their transactions in categories for easy of management and allow them to keep track of their expenses on the entities
+**SavEarly** is a web app that helps users categorize and manage their transactions for easy expense tracking. Stay organized and gain insights into your spending habits with this user-friendly tool.
 
 ## 🛠 Built With <a name="built-with"></a>
 
