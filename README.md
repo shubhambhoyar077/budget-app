@@ -140,7 +140,7 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Adeka Zeff's**
+👤 **Shubham Bhoyar**
 
 - GitHub: [@shubhambhoyar077](https://github.com/shubhambhoyar077)
 
@@ -177,7 +177,7 @@ If you like this project, kindly give me a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- I would like to thank [Microverse](https://www.microverse.org/) for inspiring this project
+- I would like to thank [Microverse](https://www.microverse.org/) and [Gregoire Vella](https://www.behance.net/gregoirevella) for design.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
